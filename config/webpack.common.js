@@ -6,9 +6,15 @@ module.exports = {
     alias: {
       '@components': path.resolve(__dirname, '../src/components'),
     },
+    extensions: ['.tsx', '.ts', '.js'],
   },
   module: {
     rules: [
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
