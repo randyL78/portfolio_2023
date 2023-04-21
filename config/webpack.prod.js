@@ -1,38 +1,14 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { merge } = require('webpack-merge');
 
-module.exports = {
+const commonConfig = require('./webpack.common');
+
+const prodConfig = {
   entry: './src/index.tsx',
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
     publicPath: '/latest/',
   },
-  resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.jsx'],
-  },
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-react', '@babel/preset-env'],
-            plugins: ['@babel/plugin-transform-runtime'],
-          },
-        },
-      },
-      {
-        test: /\.(ts|tsx)$/,
-        use: 'ts-loader',
-        exclude: /node_modules/,
-      },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './public/index.html',
-    }),
-  ],
 };
+
+module.exports = merge(commonConfig, prodConfig);
