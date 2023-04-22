@@ -1,4 +1,5 @@
 const { merge } = require('webpack-merge');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const commonConfig = require('./webpack.common');
 
@@ -9,6 +10,11 @@ const prodConfig = {
     filename: '[name].[contenthash].js',
     publicPath: '/staging/',
   },
+  plugins: [
+    new CopyPlugin([
+      { from: 'public/robots.txt', to: 'dist' },
+    ]),
+  ],
 };
 
 module.exports = merge(commonConfig, prodConfig);
