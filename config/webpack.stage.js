@@ -11,9 +11,11 @@ const prodConfig = {
     publicPath: '/staging/',
   },
   plugins: [
-    new CopyPlugin([
-      { from: 'public/robots.txt', to: 'dist' },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: 'public/robots.txt', to: '' },
+      ],
+    }),
   ],
 };
 
