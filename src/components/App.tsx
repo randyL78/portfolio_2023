@@ -4,7 +4,7 @@ import Landing from './Landing'
 
 const app = () => {
   return (
-    <div className="relative">
+    <div className="relative m-0">
       <Landing />
       <main className='relative'>
         <Hero />
