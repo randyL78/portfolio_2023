@@ -17,7 +17,9 @@ const app = () => {
       <main className='relative'>
         <Hero />
         <Profile />
-        <Card title='Experience' quote={experienceQuote} theme={Theme.neutral} />
+        <Card title='Experience' quote={experienceQuote} theme={Theme.neutral} >
+          <p>Coming soon!</p>
+        </Card>
       </main>
     </div>
   );
