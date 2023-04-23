@@ -1,0 +1,2 @@
+export { Theme } from './theme'
+

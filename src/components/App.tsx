@@ -1,6 +1,14 @@
 import React from 'react'
-import Hero from './Hero';
-import Landing from './Landing'
+import Hero from '@components/Hero';
+import Landing from '@components/Landing';
+import Card, { CardProps } from '@components/Card';
+import Profile from '@components/Profile';
+import { Theme } from '@enums/theme';
+
+const experienceQuote: CardProps['quote'] = {
+  text: 'Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.',
+  author: 'Martin Golding',
+}
 
 const app = () => {
   return (
@@ -8,17 +16,11 @@ const app = () => {
       <Landing />
       <main className='relative'>
         <Hero />
+        <Profile />
+        <Card title='Experience' quote={experienceQuote} theme={Theme.neutral} >
+          <p>Coming soon!</p>
+        </Card>
       </main>
-      <h2>
-        Experience
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
     </div>
   );
 };
