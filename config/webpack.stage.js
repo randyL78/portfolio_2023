@@ -8,7 +8,7 @@ const prodConfig = {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
-    publicPath: '/staging/',
+    publicPath: '/',
   },
   plugins: [
     new CopyPlugin({
