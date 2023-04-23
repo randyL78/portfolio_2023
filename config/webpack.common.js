@@ -30,7 +30,7 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
       {
-        test: /\.(png|jp(e*)g|svg|gif)$/,
+        test: /\.(png|jp(e*)g|svg|gif|webp)$/,
         use: ['file-loader'],
       },
     ],
