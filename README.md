@@ -9,5 +9,5 @@ personal site.
 ## Domains:
 
 * **Local:** http://localhost:3000/
-* **Staging:** https://ddt8kqrrfsc37.cloudfront.net/
+* **Staging:** https://staging.randylayne.com/
 * **Production:** https://randylayne.com/

@@ -21,8 +21,8 @@ const Profile = () => {
           </p>
         </div>
         <div className="lg:w-1/3">
-          <div className="m-auto relative rounded-full shadow-theme-light bg-stone-300 bg-gradient-to-tl from-white w-56 h-56">
-            <img src={avatar} className="absolute w-52 h-52 rounded-full start-2 top-2" />
+          <div className="m-auto relative rounded-full shadow-theme-light bg-stone-300 bg-gradient-to-tl from-white w-56 h-56 my-6 lg:my-0">
+            <img src={avatar} className="absolute w-52 h-52 rounded-full start-2 top-2" alt="Photo of Randy ripping his shirt off Superman-style wearing a t-shirt that says I'm a programmer. What's your superpower?" />
           </div>
         </div>
         <div className="lg:w-1/3">
