@@ -1,6 +1,6 @@
 import React from 'react';
 import Card, { CardProps } from '@components/Card';
-import avatar from '../img/rdl_profile_2021.png';
+import avatar from '../img/rdl_profile_2021.webp';
 
 const cardProps: CardProps = {
   title: 'Profile',
