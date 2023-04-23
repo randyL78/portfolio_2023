@@ -17,7 +17,7 @@ const calculateBackgroundDark = (theme: Theme) => {
       return 'bg-sage-300';
     case Theme.light:
     default:
-      return 'bg-stone-100';
+      return 'bg-stone-200';
   }
 }
 
@@ -36,7 +36,7 @@ const Card = ({ title, quote, children, theme = Theme.light }: CardProps) => {
   const backgroundLight = calculateBackgroundLight(theme);
 
   return (
-    <div id={title.toLowerCase()} className={`p-12 shadow-theme mt-12 bg-gradient-to-tl ${backgroundLight} ${backgroundDark}`}>
+    <div id={title.toLowerCase()} className={`p-12 shadow-theme-primary mt-12 bg-gradient-to-tl ${backgroundLight} ${backgroundDark}`}>
       <section className="container relative m-auto text-gray-800">
         <header className="text-center">
           <h2 className="text-blue-900 text-6xl font-light mb-4">{title}</h2>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Card, { CardProps } from '@components/Card';
+import avatar from '../img/rdl_profile_2021.png';
 
 const cardProps: CardProps = {
   title: 'Profile',
@@ -20,7 +21,9 @@ const Profile = () => {
           </p>
         </div>
         <div className="lg:w-1/3">
-
+          <div className="m-auto relative rounded-full shadow-theme-light bg-stone-300 bg-gradient-to-tl from-white w-56 h-56">
+            <img src={avatar} className="absolute w-52 h-52 rounded-full start-2 top-2" />
+          </div>
         </div>
         <div className="lg:w-1/3">
           <h3 className="text-center text-blue-900 font-light text-3xl mb-4">Details</h3>
@@ -39,5 +42,6 @@ const Profile = () => {
     </Card>
   )
 }
+
 
 export default Profile;
