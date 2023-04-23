@@ -28,7 +28,7 @@ export const educations: Education[] = [
       "with hands on coding in multiple languages including C, C++, Java, and " +
       "introductions to Rust. Learned about project life-cycles and created a team-built " +
       "prototype of software to address a real-world problem. Was a 4 time recipient of " +
-      "the Dean's Perfect Scholar Award."
+      "the Dean's Perfect Scholar Award. Graduated Summa Cum Laude."
   },
   {
     institution: 'Central Virginia Community College',
