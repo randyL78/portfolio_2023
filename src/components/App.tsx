@@ -3,6 +3,7 @@ import Hero from '@components/Hero';
 import Landing from '@components/Landing';
 import Profile from '@components/Profile';
 import Experience from '@components/Experience';
+import Education from '@components/Education';
 
 const app = () => {
   return (
@@ -12,6 +13,7 @@ const app = () => {
         <Hero />
         <Profile />
         <Experience />
+        <Education />
         <div className='bg-transparent pt-10'></div>
       </main>
     </div>

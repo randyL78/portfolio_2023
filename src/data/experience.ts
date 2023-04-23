@@ -38,8 +38,8 @@ export const experiences: Experience[] = [
   },
   {
     company: 'Sparklean',
-    startDate: 'Nov 2021',
-    endDate: 'Apr 2023',
+    startDate: 'Jan 2009',
+    endDate: 'Nov 2017',
     description: 'Operated and managed a small Janitorial corporation with 12-15 employees. ' +
       'Responsible for all aspects of the business from creating training manuals to accounting. ' +
       'Designed, tested, and implemented training for commercial and residential cleaning ' +
