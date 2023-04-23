@@ -13,7 +13,7 @@ module.exports = {
         'sage-300': '#b1c0bf',
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
         theme: '12px 12px 28px #08102e,-12px -12px 28px #284cda',

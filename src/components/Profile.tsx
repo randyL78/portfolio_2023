@@ -1,6 +1,5 @@
 import React from 'react';
-import Card, { CardProps } from './Card';
-import { Theme } from './enums/theme';
+import Card, { CardProps } from '@components/Card';
 
 const cardProps: CardProps = {
   title: 'Profile',
@@ -13,13 +12,30 @@ const cardProps: CardProps = {
 const Profile = () => {
   return (
     <Card title={cardProps.title} quote={cardProps.quote} >
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
+      <div className="md:p-12 md:mx-12 flex flex-col lg:flex-row">
+        <div className="lg:w-1/3">
+          <h3 className="text-center text-blue-900 font-light text-3xl mb-4">About me</h3>
+          <p>
+            I'm a Fullstack developer with an insatiable thirst for learning more about software development, including multiple languages.
+          </p>
+        </div>
+        <div className="lg:w-1/3">
+
+        </div>
+        <div className="lg:w-1/3">
+          <h3 className="text-center text-blue-900 font-light text-3xl mb-4">Details</h3>
+          <ul>
+            <li>
+              <strong>Name:</strong>
+              <p>Randy D. Layne</p>
+            </li>
+            <li className='mt-6'>
+              <strong>Location:</strong>
+              <p>Lynchburg, VA. USA</p>
+            </li>
+          </ul>
+        </div>
+      </div>
     </Card>
   )
 }

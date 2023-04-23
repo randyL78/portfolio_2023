@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Theme } from './enums/theme';
+import { Theme } from '../enums/theme';
 
 export interface CardProps {
   title: string,
@@ -36,13 +36,14 @@ const Card = ({ title, quote, children, theme = Theme.light }: CardProps) => {
   const backgroundLight = calculateBackgroundLight(theme);
 
   return (
-    <div className={`p-12 shadow-theme mt-12 bg-gradient-to-tl ${backgroundLight} ${backgroundDark}`}>
-      <section className="container relative m-auto">
+    <div id={title.toLowerCase()} className={`p-12 shadow-theme mt-12 bg-gradient-to-tl ${backgroundLight} ${backgroundDark}`}>
+      <section className="container relative m-auto text-gray-800">
         <header className="text-center">
-          <h2 className="text-blue-900 text-6xl font-light">{title}</h2>
+          <h2 className="text-blue-900 text-6xl font-light mb-4">{title}</h2>
           <q className="text-xl"><em>{quote.text}</em></q>
           <p>~{quote.author}</p>
         </header>
+        <hr className="mt-12 mb-4 border-neutral-400" />
         <div>
           {children}
         </div>
