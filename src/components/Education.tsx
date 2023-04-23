@@ -15,7 +15,7 @@ const Education = () => {
   return (
     <Card title={cardProps.title} quote={cardProps.quote} >
       {educations.map(education =>
-        <EducationBody education={education} />
+        <EducationBody key={education.institution + education.title} education={education} />
       )}
     </Card>
   );
