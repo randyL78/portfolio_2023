@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../img/circuit-board-background.png';
+import avatar from '../img/circuit-board-background.webp';
 
 const Landing = () => {
   return (
