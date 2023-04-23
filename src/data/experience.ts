@@ -5,7 +5,11 @@ export const experiences: Experience[] = [
     company: 'Crowdstreet',
     startDate: 'Nov 2021',
     endDate: 'Apr 2023',
-    description: 'Fullstack webdeveloper using Java EE, Postgres, React, Redux, and TypeScript.',
+    description: 'Fullstack webdeveloper using Java EE, Postgres, React, Redux, and TypeScript. ' +
+      'Assisted in the design and implementation of new features. Optimized heavily used SQL ' +
+      'queries, making them up to 10x faster. Mentored other developers through pair programming on ' +
+      'coding, diagramming, and documentation. Became go-to person for help on several supporting ' +
+      'services that no longer had original contributors',
     location: 'Remote',
     title: 'Web Developer III',
   },
