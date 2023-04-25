@@ -29,12 +29,20 @@ const Profile = () => {
           <h3 className="text-center text-blue-900 font-light text-3xl mb-4">Details</h3>
           <ul>
             <li>
-              <strong>Name:</strong>
-              <p>Randy D. Layne</p>
-            </li>
-            <li className='mt-6'>
               <strong>Location:</strong>
               <p>Lynchburg, VA. USA</p>
+            </li>
+            <li className='mt-1'>
+              <strong>GitHub:</strong>
+              <p><a href='https://github.com/randyL78'>github.com/randyL78</a></p>
+            </li>
+            <li className='mt-1'>
+              <strong>LinkedIn:</strong>
+              <p><a href='https://www.linkedin.com/in/randydlayne'>linkedin.com/in/randydlayne</a></p>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <p><a href='mailto:rdlayne78@gmail.com'>rdlayne78@gmail.com</a></p>
             </li>
           </ul>
         </div>
