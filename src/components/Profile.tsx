@@ -41,7 +41,7 @@ const Profile = () => {
               <p><a href='https://www.linkedin.com/in/randydlayne'>linkedin.com/in/randydlayne</a></p>
             </li>
             <li>
-              <strong>Email</strong>
+              <strong>Email:</strong>
               <p><a href='mailto:rdlayne78@gmail.com'>rdlayne78@gmail.com</a></p>
             </li>
           </ul>
