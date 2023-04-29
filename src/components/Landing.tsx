@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../img/circuit-board-background.webp';
+import background from '../img/circuit-board-background.webp';
 
 const Landing = () => {
   return (
@@ -10,7 +10,7 @@ const Landing = () => {
 }
 
 const styles = {
-  backgroundImage: `url('${avatar}')`
+  backgroundImage: `url('${background}')`
 }
 
 export default Landing;
