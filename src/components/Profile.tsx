@@ -1,6 +1,7 @@
 import React from 'react';
 import Card, { CardProps } from '@components/Card';
 import avatar from '../img/rdl_profile_2021.webp';
+import resume from '../docs/resume.pdf';
 
 const cardProps: CardProps = {
   title: 'Profile',
@@ -27,22 +28,30 @@ const Profile = () => {
         </div>
         <div className="lg:w-1/3">
           <h3 className="text-center text-blue-900 font-light text-3xl mb-4">Details</h3>
-          <ul>
-            <li>
-              <strong>Location:</strong>
-              <p>Lynchburg, VA. USA</p>
+          <ul className="pl-6">
+            <li className='mt-1'>
+              <a href='https://github.com/randyL78'>
+                <strong>GitHub:</strong>
+                <p>github.com/randyL78</p>
+              </a>
             </li>
             <li className='mt-1'>
-              <strong>GitHub:</strong>
-              <p><a href='https://github.com/randyL78'>github.com/randyL78</a></p>
-            </li>
-            <li className='mt-1'>
-              <strong>LinkedIn:</strong>
-              <p><a href='https://www.linkedin.com/in/randydlayne'>linkedin.com/in/randydlayne</a></p>
+              <a href='https://www.linkedin.com/in/randydlayne'>
+                <strong>LinkedIn:</strong>
+                <p>linkedin.com/in/randydlayne</p>
+              </a>
             </li>
             <li>
-              <strong>Email:</strong>
-              <p><a href='mailto:rdlayne78@gmail.com'>rdlayne78@gmail.com</a></p>
+              <a href='mailto:rdlayne78@gmail.com'>
+                <strong>Email:</strong>
+                <p>rdlayne78@gmail.com</p>
+              </a>
+            </li>
+            <li>
+              <a href={resume} target="_blank">
+                <strong>Resume:</strong>
+                <p>Resume PDF</p>
+              </a>
             </li>
           </ul>
         </div>
