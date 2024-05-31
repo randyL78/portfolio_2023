@@ -4,19 +4,19 @@ export const experiences: Experience[] = [
   {
     company: 'Curve Health',
     startDate: 'Jun 2023',
-    endDate: 'Present',
-    description: 'Fullstack Ruby on Rails and React contractor. Overhauled the Gitlab CI pipeline ' +
+    endDate: 'May 2024',
+    description: 'Ruby on Rails and React engineer. Overhauled the Gitlab CI pipeline ' +
       'to reduce runtimes by 40%. Integrated server side analytics to give data team clearer picture ' +
       'on how users are interacting with the system. Responsible for updating Rails from 5.2 to 6.0 with ' +
-      '0 downtime',
+      '0 downtime. Managed, onboarded, developed, and paired with new developers',
     location: 'Remote',
-    title: 'Full Stack Developer',
+    title: 'Lead Full Stack Developer',
   },
   {
     company: 'Crowdstreet',
     startDate: 'Nov 2021',
     endDate: 'Apr 2023',
-    description: 'Fullstack webdeveloper using Java EE, Postgres, React, Redux, and TypeScript. ' +
+    description: 'Fullstack web developer using Java EE, Postgres, React, Redux, and TypeScript. ' +
       'Assisted in the design and implementation of new features. Optimized heavily used SQL ' +
       'queries, making them up to 10x faster. Mentored other developers through pair programming on ' +
       'coding, diagramming, and documentation. Became go-to person for help on several supporting ' +
